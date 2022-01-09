@@ -1,5 +1,5 @@
-# nameservice
-**nameservice** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://starport.com).
+# Origen
+**Origen** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://starport.com), focusing on supply-chain based applications.
 
 ## Get started
 
@@ -39,9 +39,9 @@ After a draft release is created, make your final changes from the release page 
 To install the latest version of your blockchain node's binary, execute the following command on your machine:
 
 ```
-curl https://get.starport.com/cosmonaut/nameservice@latest! | sudo bash
+curl https://get.starport.com/ioflex/origen@latest! | sudo bash
 ```
-`cosmonaut/nameservice` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
+`ioflex/origen` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
 
 ## Learn more
 

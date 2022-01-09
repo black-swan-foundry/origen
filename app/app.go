@@ -85,16 +85,11 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	dbm "github.com/tendermint/tm-db"
 
+	"github.com/cosmonaut/nameservice/docs"
+	"github.com/origen-chain/config/config.go"
 	"github.com/tendermint/spm/cosmoscmd"
 	"github.com/tendermint/spm/openapiconsole"
-
-	"github.com/cosmonaut/nameservice/docs"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
-)
-
-const (
-	AccountAddressPrefix = "cosmos"
-	Name                 = "nameservice"
 )
 
 // this line is used by starport scaffolding # stargate/wasm/app/enabledProposals
