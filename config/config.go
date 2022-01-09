@@ -22,7 +22,7 @@ func SetConfig() {
 		log.Fatal(err)
 	}
 
-	carsonUnit := sdk.NewDecWithPrec(1, int64(CroExponent)) // 10^-8 (carson)
+	carsonUnit := sdk.NewDecWithPrec(1, int64(GenExponent)) // 10^-18 (davidson)
 	err = sdk.RegisterDenom(BaseCoinUnit, carsonUnit)
 
 	if err != nil {

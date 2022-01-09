@@ -3,17 +3,18 @@ package main
 import (
 	"os"
 
-	"github.com/cosmonaut/nameservice/app"
+	"github.com/BlackSwanFoundry/origen/app"
+	bsfconfig "github.com/BlackSwanFoundry/origen/config"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	"github.com/tendermint/spm/cosmoscmd"
 )
 
 func main() {
 	rootCmd, _ := cosmoscmd.NewRootCmd(
-		app.Name,
-		app.AccountAddressPrefix,
+		bsfconfig.Name,
+		bsfconfig.AccountAddressPrefix,
 		app.DefaultNodeHome,
-		app.Name,
+		bsfconfig.Name,
 		app.ModuleBasics,
 		app.New,
 		// this line is used by starport scaffolding # root/arguments

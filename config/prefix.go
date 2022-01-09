@@ -17,6 +17,6 @@ var (
 	ConsNodePubKeyPrefix   = "ognconpub"
 	HumanCoinUnit          = "gen"
 	BaseCoinUnit           = "basegen" // 10^-18 AKA "davidson"
-	CroExponent            = 18
+	GenExponent            = 18
 	Name                   = "Origen Supply Chain"
 )
