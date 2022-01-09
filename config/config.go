@@ -16,14 +16,14 @@ func SetConfig() {
 
 	config.SetCoinType(CoinType)
 
-	croUnit := sdk.OneDec()
-	err := sdk.RegisterDenom(HumanCoinUnit, croUnit)
+	genUnit := sdk.OneDec()
+	err := sdk.RegisterDenom(HumanCoinUnit, genUnit)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	carsonUnit := sdk.NewDecWithPrec(1, int64(GenExponent)) // 10^-18 (davidson)
-	err = sdk.RegisterDenom(BaseCoinUnit, carsonUnit)
+	davidsonUnit := sdk.NewDecWithPrec(1, int64(GenExponent)) // 10^-18 (davidson)
+	err = sdk.RegisterDenom(BaseCoinUnit, davidsonUnit)
 
 	if err != nil {
 		log.Fatal(err)
