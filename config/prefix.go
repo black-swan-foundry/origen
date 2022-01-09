@@ -1,7 +1,7 @@
 //go:build !testnet
 // +build !testnet
 
-package chainconfig
+package bsfconfig
 
 const (
 	CoinType       = 118
@@ -18,4 +18,5 @@ var (
 	HumanCoinUnit          = "gen"
 	BaseCoinUnit           = "basegen" // 10^-18 AKA "davidson"
 	CroExponent            = 18
+	Name                   = "Origen Supply Chain"
 )

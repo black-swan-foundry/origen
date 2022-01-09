@@ -1,4 +1,4 @@
-package chainconfig
+package bsfconfig
 
 import (
 	"flag"
