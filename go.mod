@@ -1,4 +1,4 @@
-module github.com/cosmonaut/nameservice
+module github.com/BlackSwanFoundry/origen
 
 go 1.16
 

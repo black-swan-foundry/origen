@@ -1,7 +1,7 @@
 //go:build !testnet
 // +build !testnet
 
-package config
+package chainconfig
 
 const (
 	CoinType       = 118
