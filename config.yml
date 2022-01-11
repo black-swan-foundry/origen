@@ -14,4 +14,4 @@ client:
 faucet:
   name: bob
   coins: ["5token", "100000stake"]
-  port: 42069
+  port: 4500

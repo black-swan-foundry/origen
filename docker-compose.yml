@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  chainnode0:
+    container_name: origen-node0
+    image: "bsf/origen_main_node"
+    ports:
+      - "26656-26657:26656-26657"
+      - "1317:1317"
+      - "9090:9090"
+    environment:
+      - ID=0
+      - LOG=${LOG:-origen-chaind.log}
+    volumes:
+      - ${BUILDDIR:-./build}:/origen-chaind:Z
+    networks:
+      localnet:
+        - ipv4_address: 11.11.0.10
+  nginx:
+    container_name: nginx_prod
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+      - "443:443"
+      - "9090:9090"
+      - "1317:1317"
+      - "26656-26657:26656-26657"
+    networks:
+      localnet:
+        - ipv4_address: 11.11.0.2
