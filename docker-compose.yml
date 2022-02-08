@@ -7,7 +7,8 @@ services:
     ports:
       - "26656-26657:26656-26657"
       - "1317:1317"
-      - "4500:4500"
+      - "9090:9090"
+      - "6060:6060"
     environment:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}

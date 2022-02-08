@@ -1,17 +1,17 @@
 accounts:
-  - name: alice
-    coins: ["20000token", "200000000stake"]
-  - name: bob
-    coins: ["10000token", "100000000stake"]
+  - name: dl1
+    coins: ["100000token", "1000000stake"]
+  - name: dl2
+    coins: ["100000token", "1000000stake"]
 validator:
-  name: alice
-  staked: "100000000stake"
+  name: dl1
+  staked: "1000000stake"
 client:
   openapi:
     path: "docs/static/openapi.yml"
   vuex:
     path: "vue/src/store"
 faucet:
-  name: bob
-  coins: ["5token", "100000stake"]
-  port: 4500
+  name: dl2
+  coins: ["100token", "1000stake"]
+  port: 9090
