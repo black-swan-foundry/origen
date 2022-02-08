@@ -8,6 +8,7 @@ FROM starport/cli
 
 MAINTAINER maintainers@blackswanfoundry.com
 
-WORKDIR /chain
+USER tendermint
+COPY . /apps
 
-ENTRYPOINT ["starport chain serve"]
+ENTRYPOINT ["starport"]

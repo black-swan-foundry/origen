@@ -4,6 +4,7 @@ services:
   chainnode0:
     container_name: origen-mainnet-node0
     image: "bsfoundry/origen_mainnet:latest"
+    command: "chain serve"
     ports:
       - "26656-26657:26656-26657"
       - "1317:1317"
@@ -13,7 +14,7 @@ services:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}
     volumes:
-      - ./:/chain
+      - ./:/apps
   nginx:
     container_name: nginx_prod
     image: nginx:latest
