@@ -13,7 +13,7 @@ services:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}
     volumes:
-      - ${BUILDDIR:-./build}:/origen-chaind:Z
+      - ./:/chain
   nginx:
     container_name: nginx_prod
     image: nginx:latest

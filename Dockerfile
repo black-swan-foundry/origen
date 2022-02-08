@@ -8,6 +8,6 @@ FROM starport/cli
 
 MAINTAINER maintainers@blackswanfoundry.com
 
-RUN "starport scaffold chain github.com/blackswanfoundry/origen"
+WORKDIR /chain
 
 ENTRYPOINT ["starport chain serve"]
