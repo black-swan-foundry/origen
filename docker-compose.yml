@@ -3,7 +3,7 @@ version: '3'
 services:
   chainnode0:
     container_name: origen-mainnet-node0
-    image: "bsfoundry/origen_mainnet:latest"
+    image: "bsfoundry/origen_mainnet:0.0.1"
     ports:
       - "26656-26657:26656-26657"
       - "1317:1317"
