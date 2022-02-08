@@ -6,6 +6,8 @@
 # Final image
 FROM golang:alpine
 
+MAINTAINER maintainers@blackswanfoundry.com
+
 ENV PACKAGES curl git libc-dev bash gcc linux-headers eudev-dev
 
 RUN apk add --no-cache $PACKAGES

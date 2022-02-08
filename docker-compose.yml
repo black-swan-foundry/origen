@@ -2,12 +2,12 @@ version: '3'
 
 services:
   chainnode0:
-    container_name: origen-node0
-    image: "bsf/origen_main_node"
+    container_name: origen-mainnet-node0
+    image: "bsfoundry/origen_mainnet:latest"
     ports:
       - "26656-26657:26656-26657"
       - "1317:1317"
-      - "9090:9090"
+      - "4500:4500"
     environment:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}
@@ -24,7 +24,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "9090:9090"
+      - "4500:4500"
       - "1317:1317"
       - "26656-26657:26656-26657"
     networks:
