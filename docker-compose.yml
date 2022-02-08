@@ -13,9 +13,6 @@ services:
       - LOG=${LOG:-origen-chaind.log}
     volumes:
       - ${BUILDDIR:-./build}:/origen-chaind:Z
-    networks:
-      localnet:
-        - ipv4_address: 11.11.0.10
   nginx:
     container_name: nginx_prod
     image: nginx:latest
@@ -27,6 +24,4 @@ services:
       - "4500:4500"
       - "1317:1317"
       - "26656-26657:26656-26657"
-    networks:
-      localnet:
-        - ipv4_address: 11.11.0.2
+
