@@ -6,12 +6,6 @@ services:
     user: "${UID}:${GID}"
     image: "bsfoundry/origen_mainnet:latest"
     command: "chain serve"
-    ports:
-      - "26656-26657:26656-26657"
-      - "1317:1317"
-      - "9090:9090"
-      - "4500:4500"
-      - "6060:6060"
     environment:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}
@@ -19,6 +13,10 @@ services:
       - GID=0
     volumes:
       - ./:/apps
+    depends_on:
+      - nginx
+    networks:
+      - net
   nginx:
     container_name: nginx_prod
     image: nginx:latest
@@ -27,7 +25,9 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    networks:
+      - net
 
 networks:
-  bridge:
+  net:
     external: true
