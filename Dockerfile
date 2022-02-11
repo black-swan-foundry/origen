@@ -8,7 +8,6 @@ FROM starport/cli
 
 MAINTAINER maintainers@blackswanfoundry.com
 
-USER tendermint
 COPY . /apps
 
 ENTRYPOINT ["starport"]
