@@ -14,4 +14,4 @@ client:
 faucet:
   name: dl2
   coins: ["100token", "1000stake"]
-  port: 9090
+  port: 4500
