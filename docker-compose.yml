@@ -3,6 +3,7 @@ version: '3'
 services:
   chainnode0:
     container_name: origen-mainnet-node0
+    user: "${UID}:${GID}"
     image: "bsfoundry/origen_mainnet:latest"
     command: "chain serve"
     ports:
