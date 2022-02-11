@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   title: HTTP API Console
-  name: 'Origen Supply Chain Testnet'
+  name: ''
   description: ''
 paths:
   /cosmos/authz/v1beta1/grants:

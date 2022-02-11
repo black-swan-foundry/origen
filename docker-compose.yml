@@ -15,6 +15,8 @@ services:
     environment:
       - ID=0
       - LOG=${LOG:-origen-chaind.log}
+      - UID=0
+      - GID=0
     volumes:
       - ./:/apps
   nginx:
@@ -27,6 +29,5 @@ services:
       - "443:443"
 
 networks:
-  default:
+  bridge:
     external: true
-    name: origen_default
