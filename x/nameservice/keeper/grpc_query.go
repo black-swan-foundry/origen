@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/wangfeiping/flares/x/nameservice/types"
+	"github.com/blackswanfoundry/origen/x/nameservice/types"
 )
 
 var _ types.QueryServer = Keeper{}

@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/wangfeiping/flares/x/nameservice/types"
+	"github.com/blackswanfoundry/origen/x/nameservice/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module
