@@ -18,5 +18,5 @@ var (
 	HumanCoinUnit          = "gen"
 	BaseCoinUnit           = "basegen" // 10^-18 AKA "davidson"
 	GenExponent            = 18
-	Name                   = "Origen Supply Chain Testnet"
+	Name                   = "Origen Network"
 )

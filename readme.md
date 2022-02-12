@@ -30,7 +30,7 @@ To release a new version of your blockchain, create and push a new tag with `v` 
 
 ```
 git tag v0.1
-git push origin v0.1
+git push origen v0.1
 ```
 
 After a draft release is created, make your final changes from the release page and publish it.
