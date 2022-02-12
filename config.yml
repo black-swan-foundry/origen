@@ -1,11 +1,11 @@
 accounts:
   - name: dl1
-    coins: ["100000token", "1000000stake"]
+    coins: ["100000ogn", "1000000ogns"]
   - name: dl2
-    coins: ["100000token", "1000000stake"]
+    coins: ["100000ogn", "1000000ogns"]
 validator:
   name: dl1
-  staked: "1000000stake"
+  staked: "1000000ogns"
 client:
   openapi:
     path: "docs/static/openapi.yml"
@@ -13,5 +13,5 @@ client:
     path: "vue/src/store"
 faucet:
   name: dl2
-  coins: ["100token", "1000stake"]
+  coins: ["100ogn", "1000ogns"]
   port: 4500

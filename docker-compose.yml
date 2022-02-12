@@ -13,6 +13,15 @@ services:
       - GID=0
     volumes:
       - ./:/apps
+    ports:
+        - "26656-26657:26656-26657"
+        - "1317:1317"
+        - ""
+    networks:
+      - net
+  remix:
+    container_name: remix-ide
+    image: "remixproject/remix-ide:latest"
     depends_on:
       - nginx
     networks:
